@@ -1,0 +1,93 @@
+
+
+img {float:left;
+    width:200px;
+    height:200px;
+    margin-right:5px;
+    transition: 0.3s;
+    
+}
+
+.background{
+    background-image: url("../images/bg.jpg");
+}
+#total{
+    font-size: 100px;
+    color: wheat;
+    position:fixed;
+    display:block;
+    opacity:1;
+    width:10%;
+    height:100px;
+    top:calc(50% - 50px);
+    left: 45%;
+    text-shadow:0px 0px 10px #FFFFFF;
+
+
+
+}
+#podshet{
+    color: white;
+    font-size: 100px;
+    transition: 0.3s;
+    float: left;
+}
+#chislo{
+    font-size: 100px;
+    color: green;
+    float: left;
+
+}
+.scores{
+    color: white;
+    float: left;
+    font-size: 50px;
+    transition: 0.3s;
+}
+img:focus,img:active,img:focus:active{
+    transform: scale(.9);
+}
+#instructions{
+display:none;
+position:absolute;
+top:115px;
+right: 30px;
+background: green;
+color:#23252b;
+padding: 10px 15px;
+width: 300px;
+box-sizing: border-box;
+}
+#instructions.opened{
+    display: block;
+}
+#instrbtn{
+    color:#fff;
+    font-size:38px;
+    border-radius:50%;
+    width:70px;
+    height:70px;
+    border: 6px solid #fff;
+    position:fixed;
+    right: 30px;
+    top:30px;
+    background:transparent;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+.crystalcontainer{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#podshet:after {content:'/'; font-size:100px;
+}
+#total.won{
+    color:#192b01;
+}
+#total.lose{
+    color: red;
+}
