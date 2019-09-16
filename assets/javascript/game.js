@@ -10,23 +10,23 @@ function endofthegame() {
 	$('.scores').attr('style','opacity:0;');
 }
 function random() {
-    $('#podshet').attr('data-number','0');
+    $('#podshet').attr('data-e','0');
     $('#podshet').text('0');
     min = Math.ceil('40');
     max = Math.floor('80'); 
-	randomize =  Math.floor(Math.random() * (max - min + 1)) + min;
-	$('#chislo').attr('data-number', randomize);
+	randomize = Math.floor(Math.random() * (max - min + 1)) + min;
+	$('#chislo').attr('data-e', randomize);
 	$('#chislo').text(randomize);
 	min = Math.ceil('1');
 	max = Math.floor('10'); 
     random1 =  Math.floor(Math.random() * (max - min + 1)) + min;
-	$('#first').attr('data-number', random1);
+	$('#first').attr('data-e', random1);
     random2 =  Math.floor(Math.random() * (max - min + 1)) + min;
-	$('#second').attr('data-number', random2);
+	$('#second').attr('data-e', random2);
 	random3 =  Math.floor(Math.random() * (max - min + 1)) + min;
-	$('#third').attr('data-number', random3);
+	$('#third').attr('data-e', random3);
 	random4 =  Math.floor(Math.random() * (max - min + 1)) + min;
-    $('#fourth').attr('data-number', random4);
+    $('#fourth').attr('data-e', random4);
 	$('#total').attr('style','display:none;');
     $('#total').text('');
 	$('#podshet').attr('style','opacity:1;');
@@ -34,20 +34,21 @@ function random() {
     $('#total').removeClass("won");
     $('#total').removeClass("lose");
     
+    
 }
 $(document).ready(function(){
         random();
 });
 
 $('img').click(function(){    
-   var a = $(this).parent().attr('data-number');
+   var a = $(this).parent().attr('data-e');
    var a = parseInt(a);
-   var b = $('#podshet').attr('data-number');
+   var b = $('#podshet').attr('data-e');
    var b = parseInt(b);
    var a = a + b;
    aAudio.play();
    $('#podshet').text(a);
-   $('#podshet').attr('data-number', a); 
+   $('#podshet').attr('data-e', a); 
    if (a > randomize) {
     lose();
    } else if (a === randomize) {
