@@ -12,13 +12,13 @@ function endofthegame() {
 function random() {
     $('#podshet').attr('data-number','0');
     $('#podshet').text('0');
-    min = Math.ceil('19');
-    max = Math.floor('120'); 
+    min = Math.ceil('40');
+    max = Math.floor('80'); 
 	randomize =  Math.floor(Math.random() * (max - min + 1)) + min;
 	$('#chislo').attr('data-number', randomize);
 	$('#chislo').text(randomize);
 	min = Math.ceil('1');
-	max = Math.floor('12'); 
+	max = Math.floor('10'); 
     random1 =  Math.floor(Math.random() * (max - min + 1)) + min;
 	$('#first').attr('data-number', random1);
     random2 =  Math.floor(Math.random() * (max - min + 1)) + min;

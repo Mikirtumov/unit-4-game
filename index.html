@@ -1,42 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css"/>
-<title>jQuery</title>
-</head>
-<body class="background">
-                <button id="instrbtn">?</button>
-                <div id="instructions">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, doloremque perspiciatis culpa eum hic incidunt expedita illum, atque mollitia eos nesciunt aliquid, corporis ducimus fugit sint dicta laboriosam? Beatae itaque maxime quam numquam expedita eveniet, sed unde repudiandae explicabo error minus repellat soluta sequi voluptatem omnis blanditiis, eaque iure alias necessitatibus! Architecto pariatur omnis, eveniet minima tenetur atque nihil quam accusamus, odio mollitia, amet dolorem rem eius ad placeat sit? Maiores sint autem reiciendis at odit corrupti ad unde dignissimos neque eum quos, nemo rem assumenda, nulla debitis nesciunt sapiente quo modi temporibus. Debitis aut laborum repellat odit impedit officiis?
-                </div>
-                <div id="podshet"></div>
-               
 
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <title>jQuery</title>
+</head>
+
+<body class="background">
+        <div id="podshet"></div>
         <div id="chislo" data-number=""></div>
-        <div class="crystalcontainer">
-        <div id="first" data-number="1"><img src="assets/images/red.png"></div>
-        <div id="second" data-number="2"><img src="assets/images/green.png">
+        <div class="container">
+                <div class="row"></div>
+                <div class="col-sm">
+                        <div id="gamename">Crystals Collector!</div>
+                </div>
+                        <button id="instrbtn">?</button>
         </div>
-        <div id="third" data-number="3"><img src="assets/images/blue.png"></div>
-        <div id="fourth" data-number="4"><img src="assets/images/purple.png">
+        
+                <div id="instructions">
+                <p>You will be given a random number at the start of the game. <br><br>
+
+                        There are four crystals. By clicking on a crystal you will add a spacific amount of points to
+                        your total score. <br><br>
+
+                        You win the game by matching your total score to random number, you lose the game if your total
+                        score goes above the random number. <br><br>
+
+                        The value of each crystal is hidden from you until you click on it. <br><br>
+
+                        Each time when the game starts, the game will change the values of each crystal.</p>
+        </div>
+
+
+        <div class="crystalcontainer">
+        <div id="first" data-number="1"><img src="assets/images/red.png" alt="Red Crystal">
+        </div>
+         <div id="second" data-number="2"><img src="assets/images/green.png"
+                alt="Green Crystal">
+        </div>
+         <div id="third" data-number="3"><img src="assets/images/blue.png"
+                alt="Blue Crystal">
+        </div>
+         <div id="fourth" data-number="4"><img src="assets/images/purple.png"
+                alt="Purple Crystal">
         </div>
         </div>
         <div id="total"></div>
         <div class="scores">
-                Game Number: <span id="games">0</span> <br>
+                Games: <span id="games">0</span> <br>
                 Wins: <span id="wins">0</span> <br>
                 Losses: <span id="losses">0</span>
-            </div>
+        </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="assets/javascript/game.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>
