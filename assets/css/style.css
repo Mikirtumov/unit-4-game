@@ -1,15 +1,16 @@
-img {float:left;
+img{
+    float:left;
     width:200px;
     height:200px;
     margin-right:5px;
     transition: 0.3s;   
+    cursor: pointer;
 }
 .background{
     background-image: url("../images/bg.jpg");
 }
 #total{
-    font-size: 100px;
-    color: wheat;
+    font-size: 150px;
     position:fixed;
     display:block;
     opacity:1;
@@ -17,7 +18,6 @@ img {float:left;
     height:100px;
     top:calc(50% - 50px);
     left: 45%;
-    
 }
 #podshet{
     color: #a9ccec;
@@ -29,7 +29,6 @@ img {float:left;
     font-size: 100px;
     color: green;
     float: left;
-
 }
 .scores{
     color: #a9ccec;
@@ -39,7 +38,7 @@ img {float:left;
     text-shadow:1px 1px 5px #282121;
 }
 img:focus,img:active,img:focus:active{
-    transform: scale(.9);
+    transform: scale(.9);   
 }
 #instructions{
 display:none;
@@ -76,9 +75,9 @@ font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 #podshet:after {content:'/'; font-size:100px;
+    color: #a9ccec;
 }
 #total.won{
     color:#2fb01f;
@@ -95,4 +94,3 @@ font-weight: bold;
     justify-content: center;
     text-shadow:3px 4px 7px #282121;
 }
-

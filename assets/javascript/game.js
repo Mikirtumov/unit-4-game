@@ -66,9 +66,9 @@ function win() {
 	$('#total').addClass("won");
 	endofthegame()
     $('#total').text('You won!');
-	
     bAudio.play();
-    setTimeout(random, 2000);
+    setTimeout(random, 1000);
+    
 }
 function lose() {
     totalGames++;
@@ -80,7 +80,7 @@ function lose() {
 	endofthegame()
     $('#total').text('You lost!');
     cAudio.play();
-	setTimeout(random, 2000);	
+	setTimeout(random, 1000);	
 }
 $('#instrbtn').click(function() {
     $('#instructions').toggleClass('opened')
